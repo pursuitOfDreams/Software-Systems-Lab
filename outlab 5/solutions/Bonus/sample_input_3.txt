@@ -1,0 +1,13 @@
+4
+16 16
+A B C D E F
+F E D C B A
+15 15
+A B C D E
+E D C B A
+14 14
+A B C D
+D C B A
+13 13
+A B C
+C B A

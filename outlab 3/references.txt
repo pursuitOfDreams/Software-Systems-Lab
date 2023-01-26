@@ -1,0 +1,2 @@
+1. https://stackoverflow.com/questions/6618515/sorting-list-based-on-values-from-another-list
+2. https://www.kite.com/python/answers/how-to-count-frequency-of-unique-values-in-a-numpy-array-in-python

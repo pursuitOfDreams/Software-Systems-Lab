@@ -1,0 +1,14 @@
+Commands that were used:
+
+1. git log -> to check timeline of commits
+2. git checkout <commit hash> -> To check all the commits to identify the point(commit X)
+				 at which the creds.env file was commited and to go to that branch.
+3. git branch <branch name> -> To create a new branch
+4. git rm -> To remove the creds.env file from the commit
+5. git restore --source=<commit X hash> --staged --worktree <filename>-> to restore the files in commit X
+									 to new branch created
+6. git rebase -> to rebase master branch to new branch
+7. git rebase -i <commit hash>^ -> to delete the commit from the log history
+8. git reflog 
+9. git reflog expire --expire-unreachable=now --all -> to expire all old commits and their objects
+10.git gc --aggressive --prune=all ->to remove the old objects

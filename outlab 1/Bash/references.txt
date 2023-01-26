@@ -1,0 +1,4 @@
+1. https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it
+2. http://technicalworldforyou.blogspot.com/2012/06/shell-script-to-sort-number-in.html
+3. https://superuser.com/questions/352289/bash-scripting-test-for-empty-directory
+4. https://ryanstutorials.net/bash-scripting-tutorial/

@@ -1,0 +1,7 @@
+Chandigarh      6   
+Manipur      7   
+Odisha      10   
+Haryana      43   
+Puducherry      49   
+Assam      59   
+Mizoram      63

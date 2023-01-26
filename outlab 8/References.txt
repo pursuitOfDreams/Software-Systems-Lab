@@ -1,0 +1,1 @@
+https://surfertas.github.io/cmake/cpp/projecteuler/2019/05/01/cmake.html

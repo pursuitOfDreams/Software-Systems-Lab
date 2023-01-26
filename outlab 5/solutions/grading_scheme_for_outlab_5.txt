@@ -1,0 +1,45 @@
+CS 251-2021-1
+
+Outlab-5 sed&awk
+
+*Any space tabs or new line issues are ignored
+
+Q1 ---------------------------  (23 marks)
+s_0 stop_0 suffixes_0 (4 marks)
+s_1 stop_0 suffixes_0 (4 marks)
+s_2 stop_0 suffixes_0 (5 marks) 
+s_3 stop_0 suffixes_0 (5 marks) 
+s_4 stop_4 suffixes_4 (5 marks)
+
+
+Q2 ---------------------------(13 marks)
+s_0 evaluated (3 marks) 
+s_1 evaluated (3 marks)
+s_2 evaluated (3 marks)
+s_3 evaluated (4 marks)
+
+Q3 ---------------------------(18 marks)
+s_0 N_3  (4 marks)
+s_1 N_10 (7 marks)
+s_2 N_17 (7 marks)
+
+Q4 ---------------------------(28 marks)
+s_0 140000_153000 (5 marks) 
+s_1 140600_140700 (5 marks) 
+s_2 140615_141015 (6 marks)
+s_3 152000_230000 (6 marks)
+s_4 152000_160000 (6 marks)
+
+Q5 ---------------------------(18 marks)
+s_0 ran (9 marks)
+s_1 ran (9 marks)
+
+
+Bonus ------------------------(18 marks)
+s_0  (4 marks)
+s_1  (4 marks)
+s_2  (4 marks)
+s_3  (4 marks)
+s_4  (2 marks)
+
+Final Score = max(sum(Q1+..Q5+Bonus),100)

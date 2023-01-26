@@ -1,0 +1,56 @@
+helloworld:
+	g++ helloworld.cpp -o helloworld
+
+
+usespthread:
+	g++ -w usespthread.cpp -o usespthread -lpthread
+
+
+.PHONY: installdynamic
+installdynamic: libMyEngineDynamic.so
+	install libMyEngineDynamic.so -t /usr/local/lib/
+	install myengine/myengine.hpp -t /usr/local/include/
+
+
+.PHONY: installstatic
+installstatic: libMyEngineStatic.a
+	install libMyEngineStatic.a -t /usr/local/lib/
+	install myengine/myengine.hpp -t /usr/local/include/
+
+  
+libMyEngineDynamic.so:
+	g++ -c -o myengine.o myengine/myengine.cpp
+	gcc -shared -o libMyEngineDynamic.so myengine.o
+
+
+libMyEngineStatic.a:
+	g++ -c -o myengine.o myengine/myengine.cpp
+	ar rvs libMyEngineStatic.a myengine.o
+
+
+mygamestatic.o: mygame/mygame.cpp myengine/myengine.hpp
+	g++ -c mygame/mygame.cpp -o mygamestatic.o
+
+mygamedynamic.o: mygame/mygame.cpp myengine/myengine.hpp
+	g++ -c mygame/mygame.cpp -o mygamedynamic.o
+
+mygamedynamic:
+	g++ -c mygame/mygame.cpp -o mygamedynamic.o
+	g++ -o mygamedynamic mygamedynamic.o -L/usr/local/lib /usr/local/lib/libMyEngineDynamic.so -I/usr/local/include/
+
+mygamestatic:
+	g++ -c mygame/mygame.cpp -o mygamestatic.o
+	g++ -o mygamestatic mygamestatic.o -L/usr/local/lib /usr/local/lib/libMyEngineStatic.a -I/usr/local/include/
+
+
+.PHONY: clean
+clean:
+	rm -rf helloworld
+	rm -rf usespthread
+	rm -rf mygamedynamic
+	rm -rf mygamestatic
+	rm -rf *.o
+	rm -rf *.a
+	rm -rf *.so
+
+
